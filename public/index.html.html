@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인형 옷 갈아입히기 게임</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>인형 옷 갈아입히기 게임</h1>
+        
+        <div id="game-area">
+            <div id="doll-area">
+                <!-- 인형이 표시될 영역 -->
+                <div id="doll"></div>
+            </div>
+            
+            <div id="wardrobe-area">
+                <h2>옷장</h2>
+                <div id="clothes-items">
+                    <!-- 옷 아이템들이 동적으로 추가될 영역 -->
+                </div>
+            </div>
+        </div>
+        
+        <div id="control-buttons">
+            <button id="save-btn">저장</button>
+            <button id="reset-btn">초기화</button>
+            <button id="share-btn">공유</button>
+        </div>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/doll.js"></script>
+    <script src="js/wardrobe.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

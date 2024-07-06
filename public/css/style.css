@@ -1,0 +1,86 @@
+/* 전체 게임 컨테이너 */
+#game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 게임 영역 */
+#game-area {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* 인형 영역 */
+#doll-area {
+    width: 45%;
+    height: 500px;
+    background-color: #ffeeee;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#doll {
+    width: 200px;
+    height: 300px;
+    background-color: #ffd700; /* 임시 인형 색상 */
+}
+
+/* 옷장 영역 */
+#wardrobe-area {
+    width: 45%;
+    height: 500px;
+    background-color: #eeeeff;
+    border: 2px solid #000;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#wardrobe-area h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#clothes-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.clothes-item {
+    width: 80px;
+    height: 80px;
+    background-color: #ddd;
+    border: 1px solid #999;
+    cursor: pointer;
+}
+
+/* 컨트롤 버튼 */
+#control-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #dddddd;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #cccccc;
+}
